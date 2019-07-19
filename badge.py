@@ -20,7 +20,7 @@ class Badge(object):
 		:param _input: input file name (str) or input as pd.Dataframe()
 		'''
 
-		if isinstance(_input, str): _df = pd.read_csv(_input, dtype={'gene': str, 'barcodename': str, 'value': np.float64, 'sample_id': str, 'cell_type': str})
+		if isinstance(_input, str): _df = pd.read_csv(_input, dtype={'gene': str, 'value': np.float64, 'sample_id': str, 'cell_type': str})
 		else: _df = _input
 
 		_df = _df.loc[:, ~_df.columns.str.contains('^Unnamed')]
