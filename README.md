@@ -36,10 +36,19 @@ Download required dependencies:
 pip install -r requirements.txt
 ```
 
+#### Data
+
+Data must have these four columns:
+
+gene | sample_id | cell_type | value
+--- | --- | --- | ---
+MS4A1 | 00001 | B | 6.23
+... | ... | ... | ...
+
 ### Usage
 
 #### Determining Differentially Expressed Genes:
-``` shell
+```
 usage: genes.py [-h] [-g GRAPH] input [ctypes [ctypes ...]]
 
 Get differentially expressed genes.
