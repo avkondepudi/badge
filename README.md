@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 #### Data
 
-Data must have these four columns:
+Data must be a pandas DataFrame and have these four columns:
 
 gene | sample_id | cell_type | value
 --- | --- | --- | ---
