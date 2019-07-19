@@ -40,5 +40,16 @@ pip install -r requirements.txt
 
 #### Determining Differentially Expressed Genes:
 ``` shell
-python genes.py [input file] [cell types] [-g]
+usage: genes.py [-h] [-g GRAPH] input [ctypes [ctypes ...]]
+
+Get differentially expressed genes.
+
+positional arguments:
+input                 input file
+ctypes                cell types
+
+optional arguments:
+-h, --help            show this help message and exit
+-g GRAPH, --graph GRAPH
+whether to graph (default: True)
 ```
